@@ -1,96 +1,13 @@
 <!doctype html>
 <html lang="en-gb">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="/dist/tailwind.css">
-    <link rel="stylesheet" href="https://use.typekit.net/cfq8ryg.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<?php include 'components/globals/head.php' ?>
 
-    <title>Homepage - Silbury</title>
-    <meta name="description" content="">
-</head>
+<?php include 'components/globals/header.php' ?>
+
 <body class="font-sans text-p">
 <a class="skip-to-the-main-content hidden" href="#content" title="Skip to the main content" aria-label="Skip to the main content" tabindex="0">Skip to main content</a>
-<header id="site-header">
-    <div id="top-nav" class="bg-brand-dark-green py-2.5 text-brand-white">
-        <div class="container">
-            <div class="grid grid-cols-12">
-                <div class="col-span-12 lg:col-span-3">
-                    <ul class="text-p">
-                        <li class="inline-block pr-4"><a href="https://uk.linkedin.com/company/silbury-marketing-ltd" title="Silbury LinkedIn" aria-label="Silbury LinkedIn" tabindex="0" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li class="inline-block pr-4"><a href="" title="Intex Facebook" aria-label="Silbury Facebook" tabindex="0" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li class="inline-block"><a href="https://twitter.com/silburyoils" title="Silbury Twitter" aria-label="Silbury Twitter" tabindex="0" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-                <div id="top-navigation" class="hidden lg:block col-span-9 text-right">
-                    <nav role="navigation">
-                        <ul>
-                            <li class="inline-block text-footer-p"><a href="#" title="About" aria-label="About" tabindex="0" class="hover:underline">About</a></li>
-                            <li class="inline-block pl-5 text-footer-p"><a href="#" title="Applications" aria-label="Applications" tabindex="0" class="hover:underline">Applications</a></li>
-                            <li class="inline-block pl-5 text-footer-p"><a href="#" title="Products" aria-label="Products" tabindex="0" class="hover:underline">Products</a></li>
-                            <li class="inline-block pl-5 text-footer-p"><a href="#" title="Expertise" aria-label="Expertise" tabindex="0" class="hover:underline">Expertise</a></li>
-                            <li class="inline-block pl-5 text-footer-p"><a href="#" title="Sustainability" aria-label="Sustainability" tabindex="0" class="hover:underline">Sustainability</a></li>
-                            <li class="inline-block pl-5 text-footer-p"><a href="#" title="News" aria-label="News" tabindex="0" class="hover:underline">News</a></li>
-                            <li class="inline-block pl-5 text-footer-p"><a href="#" title="Contact" aria-label="Contact" tabindex="0" class="hover:underline">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="grid grid-cols-12 items-center">
-            <div class="col-span-3">
-                <a href="/" title="home" aria-label="home" tabindex="0"><img src="images/logo.png" alt="Silbury logo" class="my-2.5"></a>
-            </div>
-            <div id="header-navigation" class="hidden lg:block col-span-9 text-right">
-                <nav role="navigation" class="text-footer-p">
-                    <ul>
-                        <li class="inline-block"><a href="#" title="Manufacturing" aria-label="Manufacturing" tabindex="0" class="hover:underline hover:text-brand-dark-green">Manufacturing</a></li>
-                        <li class="inline-block pl-8"><a href="#" title="Foodservice" aria-label="Foodservice" tabindex="0" class="hover:underline hover:text-brand-dark-green">Foodservice</a></li>
-                        <li class="inline-block pl-8"><a href="#" title="Retail" aria-label="Retail" tabindex="0" class="hover:underline hover:text-brand-dark-green">Retail</a></li>
-                        <li class="inline-block pl-8"><a href="#" title="Bakery Ingredients" aria-label="Bakery Ingredients" tabindex="0" class="hover:underline hover:text-brand-dark-green">Bakery Ingredients</a></li>
-                        <li class="inline-block pl-8"><a href="#" title="Specialist Applications" aria-label="Specialist Applications" tabindex="0" class="hover:underline hover:text-brand-dark-green">Specialist Applications</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-span-9 lg:hidden sm:flex flex items-center ml-auto">
-                <a id="open-mobile-menu" class="text-right text-2xl" href="#" title="Open Mobile Menu" aria-label="Open Mobile Menu"><i class="fa fa-bars"></i></a>
-            </div>
-        </div>
-    </div>
-    <section id="banner" role="banner" aria-labelledby="main-title" class="py-32 bg-cover bg-blend-overlay bg-brand-black" style="background-image: url('./images/background.jpg')">
-        <div class="container">
-            <div class="grid grid-cols-12">
-                <div class="col-span-12">
-                    <h1 id="main-title" class="text-h1 text-center text-brand-white font-bold mb-5">The food industry manufacturing and supply experts.</h1>
-                </div>
-            </div>
-            <div class="grid grid-cols-12">
-                <div class="col-span-12">
-                    <form method="post" action="#" id="find-product-large">
-                        <fieldset class="search">
-                            <label for="product-search" class="hidden">Product search</label>
-                            <input type="text" class="w-10/12 md:w-11/12 p-3" id="product-search" name="product_search" value="" placeholder="Find a product"/><button type="submit" name="search button" class="w-2/12 md:w-1/12 p-3 bg-brand-light-green"><i class="fa fa-search"></i></button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="banner-footer bg-brand-dark-green text-brand-white">
-        <div class="container">
-            <div class="grid grid-cols-12 gap-2">
-                <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-stringent.png" alt="stringent quality icon" class="inline-block pr-3">Stringent quality assurance</div>
-                <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-personal.png" alt="friendly service icon" class="inline-block pr-3">Personal, friendly service</div>
-                <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-money.png" alt="value for money icon" class="inline-block pr-3">Real value for money</div>
-                <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-brc.png" alt="BRC Accredited icon" class="inline-block pr-3">BRC Accredited</div>
-            </div>
-        </div>
-    </div>
-</header>
+
 
 <main id="content" role="main" class="mb-10">
     <section class="my-10">
