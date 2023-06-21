@@ -13,6 +13,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $company = isset($_POST['company']) ? $_POST['company'] : '';
 
+    //if the fields are empty, display the error message in the array
+    if ($name == '') {
+        $errors[] = 'Name is required';
+        $invalid = true;
+    }
+
+    if ($email == '') {
+        $errors[] = 'Email is required';
+        $invalid = true;
+    }
 
     if (!$invalid) {
         $success = true;
@@ -33,17 +43,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <h3 class="text-h3 text-brand-light-green font-bold mb-5">Hear about it first</h3>
     <p class="text-p text-brand-white mb-5">Sign up to our newsletter for news, products and more</p>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="hear-about-us-form">
+
         <fieldset class="">
             <label for="your-name" class="">
-                <input type="text" class="w-full mb-3 rounded-lg p-2" id="your-name" name="your_name" value="" placeholder="Your Name*" required/>
+                <input type="text" class="w-full mb-3 rounded-lg p-2" id="your-name" name="your_name" value="" placeholder="Your Name*"/>
             </label>
             <label for="email" class="email">
-                <input type="email" class="w-full mb-3 rounded-lg p-2" id="email" name="email" value="" placeholder="Your email*" required/>
+                <input type="email" class="w-full mb-3 rounded-lg p-2" id="email" name="email" value="" placeholder="Your email*"/>
             </label>
             <label for="company" class="company">
                 <input type="text" class="w-full mb-3 rounded-lg p-2" id="company" name="company" value="" placeholder="Company"/>
             </label>
         </fieldset>
-        <input type="submit" value="Sign up" title="Form submit" class="bg-brand-light-green p-3 rounded-lg cursor-pointer w-full lg:w-auto"/>
+        <input type="submit" value="Sign up" title="Form submit" class="bg-brand-light-green p-3 rounded-lg cursor-pointer w-full lg:w-auto mb-4"/>
+
+        <?php if($invalid) { ?>
+            <div class="form-errors mb-8">
+                <ul>
+                    <?php foreach ($errors as $error) { ?>
+                        <li class="bg-red-500 text-brand-white p-2 text-center rounded mb-4"><?php echo $error ?></li>
+                    <?php } ?>
+                </ul>
+            </div>
+        <?php } ?>
+
+        <?php if($success) { ?>
+            <div class="form-success w-full bg-green-500 p-2 text-center text-brand-white rounded mb-4">
+                <p>Success! We will be in touch shortly.</p>
+            </div>
+        <?php } ?>
     </form>
 </div>
