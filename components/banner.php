@@ -1,3 +1,5 @@
+<?php include 'data/banner-footer-callouts.php' ?>
+
 <section id="banner" role="banner" aria-labelledby="main-title" class="py-32 bg-cover bg-blend-overlay bg-brand-black" style="background-image: url('./images/background.jpg')">
     <div class="container">
         <div class="grid grid-cols-12">
@@ -20,10 +22,9 @@
 <div class="banner-footer bg-brand-dark-green text-brand-white">
     <div class="container">
         <div class="grid grid-cols-12 gap-2">
-            <div class="col-span-6 lg:col-span-3 text-p py-5 flex items-center"><img src="images/icon-stringent.png" alt="stringent quality icon" class="inline-block pr-3">Stringent quality assurance</div>
-            <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-personal.png" alt="friendly service icon" class="inline-block pr-3">Personal, friendly service</div>
-            <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-money.png" alt="value for money icon" class="inline-block pr-3">Real value for money</div>
-            <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-brc.png" alt="BRC Accredited icon" class="inline-block pr-3">BRC Accredited</div>
+            <?php foreach ($bannerCallouts as $bannerCallout) { ?>
+                <div class="col-span-6 lg:col-span-3 text-p py-5 flex items-center"><img src="<?php echo $bannerCallout['icon']; ?>" alt="<?php echo $bannerCallout['description']; ?>" class="inline-block pr-3"><?php echo $bannerCallout['description']; ?></div>
+            <?php } ?>
         </div>
     </div>
 </div>
