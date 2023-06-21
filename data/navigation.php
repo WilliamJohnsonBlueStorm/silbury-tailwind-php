@@ -17,4 +17,17 @@ $mainNavLinks = [
     ['url' => '#', 'title' => 'Specialist Applications']
 ];
 
-$boo = 'boo';
+$footerNavLinks = [
+    ['url' => '#', 'title' => 'Brexit Information'],
+    ['url' => '#', 'title' => 'Modern Slavery Act'],
+    ['url' => '#', 'title' => 'RSPO Sustainability'],
+    ['url' => '#', 'title' => 'Palm Oil Policy'],
+    ['url' => '#', 'title' => 'Whistleblowing']
+];
+
+$additionalFooterLinks = [
+    ['url' => '#', 'title' => 'Accessibility'],
+    ['url' => '#', 'title' => 'Terms &amp; Conditions'],
+    ['url' => '#', 'title' => 'Privacy Policy'],
+    ['url' => '#', 'title' => 'Site Map'],
+];
