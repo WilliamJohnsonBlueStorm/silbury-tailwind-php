@@ -20,7 +20,7 @@
 <div class="banner-footer bg-brand-dark-green text-brand-white">
     <div class="container">
         <div class="grid grid-cols-12 gap-2">
-            <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-stringent.png" alt="stringent quality icon" class="inline-block pr-3">Stringent quality assurance</div>
+            <div class="col-span-6 lg:col-span-3 text-p py-5 flex items-center"><img src="images/icon-stringent.png" alt="stringent quality icon" class="inline-block pr-3">Stringent quality assurance</div>
             <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-personal.png" alt="friendly service icon" class="inline-block pr-3">Personal, friendly service</div>
             <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-money.png" alt="value for money icon" class="inline-block pr-3">Real value for money</div>
             <div class="col-span-6 lg:col-span-3 text-p py-5"><img src="images/icon-brc.png" alt="BRC Accredited icon" class="inline-block pr-3">BRC Accredited</div>
