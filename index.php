@@ -10,7 +10,7 @@
 
 <?php include 'components/banner.php' ?>
 
-<main id="content" role="main" class="mb-10">
+<main id="content" role="main" class="">
     <section class="my-10">
         <div class="container">
             <div class="grid grid-cols-12">
@@ -29,62 +29,12 @@
 
     <?php include 'components/applications.php' ?>
 
+    <?php include 'components/home-news-section.php' ?>
+
 </main>
 
-<footer role="contentinfo" class="bg-brand-dark-green">
-    <section class="py-10 bg-no-repeat bg-cover bg-center" style="background-image: url('./images/hear-about-us-bg.jpg')">
-        <div class="container">
-            <div class="grid grid-cols-12 gap-y-5 md:gap-10">
-                <div class="col-span-12 md:col-span-6">
-                    <h3 class="text-h3 text-brand-light-green font-bold mb-5">News</h3>
-                    <div class="grid grid-cols-12 gap-y-5 md:gap-5">
-                        <div class="col-span-12 md:col-span-6">
-                            <article class="rounded-2xl overflow-hidden">
-                                <a href="#" class="group">
-                                    <img src="images/news-1.jpg" alt="news image" class="w-full h-auto">
-                                    <div class="bg-brand-white p-4">
-                                        <p class="text-small-p lg:text-p text-brand-grey mb-2">8 March 2022</p>
-                                        <h4 class="text-small-h4 lg:text-h4 text-brand-dark-green font-bold group-hover:underline">Lorem Ipsum is simply dummy text.</h4>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <article class="rounded-2xl overflow-hidden">
-                                <a href="#" class="group">
-                                    <img src="images/news-2.jpg" alt="news image" class="w-full h-auto">
-                                    <div class="bg-brand-white p-4">
-                                        <p class="text-small-p lg:text-p text-brand-grey mb-2">8 March 2022</p>
-                                        <h4 class="text-small-h4 lg:text-h4 text-brand-dark-green font-bold group-hover:underline">Lorem Ipsum is simply dummy text.</h4>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
-                    <h3 class="text-h3 text-brand-light-green font-bold mb-5">Hear about it first</h3>
-                    <p class="text-p text-brand-white mb-5">Sign up to our newsletter for news, products and more</p>
-                    <form method="post" action="#" id="hear-about-us-form">
-                        <fieldset class="">
-                            <label for="your-name" class="">
-                                <input type="text" class="w-full mb-3 rounded-lg p-2" id="your-name" name="your_name" value="" placeholder="Your Name*" required/>
-                            </label>
-                            <label for="email" class="email">
-                                <input type="email" class="w-full mb-3 rounded-lg p-2" id="email" name="email" value="" placeholder="Your email*" required/>
-                            </label>
-                            <label for="company" class="company">
-                                <input type="text" class="w-full mb-3 rounded-lg p-2" id="company" name="company" value="" placeholder="Company"/>
-                            </label>
-                        </fieldset>
-                        <input type="submit" value="Sign up" title="Form submit" class="bg-brand-light-green p-3 rounded-lg cursor-pointer w-full lg:w-auto"/>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-10 text-footer-p text-brand-white">
+<footer role="contentinfo" class="bg-brand-dark-green py-10" >
+    <section class="mb-10 text-footer-p text-brand-white">
         <div class="container">
             <div class="grid grid-cols-12 gap-5">
                 <div class="col-span-12 sm:col-span-6 lg:col-span-3">
@@ -134,7 +84,7 @@
             </div>
         </div>
     </section>
-    <section class="py-5 text-footer-p text-brand-white">
+    <section class="text-footer-p text-brand-white">
         <div class="container">
             <div class="grid grid-cols-12 lg:gap-4">
                 <div class="col-span-12 md:col-span-4 lg:col-span-3">
