@@ -3,11 +3,12 @@
 
 <?php include 'components/globals/head.php' ?>
 
-<?php include 'components/globals/header.php' ?>
-
 <body class="font-sans text-p">
 <a class="skip-to-the-main-content hidden" href="#content" title="Skip to the main content" aria-label="Skip to the main content" tabindex="0">Skip to main content</a>
 
+<?php include 'components/globals/header.php' ?>
+
+<?php include 'components/banner.php' ?>
 
 <main id="content" role="main" class="mb-10">
     <section class="my-10">
@@ -18,67 +19,13 @@
                     <p class="mb-5 text-p">Depend on Sillbury - the food industry manufacturing and supply experts</p>
                 </div>
             </div>
-            <div class="grid grid-cols-12 gap-y-5 md:gap-5">
-                <div class="col-span-12 md:col-span-4">
-                    <a href="#" title="Innovation" aria-label="Innovation" tabindex="0" class="relative overflow-hidden block rounded-2xl group">
-                        <img src="images/innovation.jpg" alt="innovation" class="w-full h-96 object-cover object-center brightness-75 group-hover:brightness-100 group-hover:scale-110 transition-all">
-                        <div class="absolute bottom-0 left-0 p-4">
-                            <h3 class="text-small-h3 lg:text-h3 font-bold text-brand-white mb-5">Innovation</h3>
-                            <p class="text-brand-white text-small-p lg:text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-span-12 md:col-span-4">
-                    <a href="#" title="Innovation" aria-label="Innovation" tabindex="0" class="relative overflow-hidden block rounded-2xl group">
-                        <img src="images/about.jpg" alt="about" class="w-full h-96 object-cover object-center brightness-75 group-hover:brightness-100 group-hover:scale-110 transition-all">
-                        <div class="absolute bottom-0 left-0 p-4">
-                            <h3 class="text-small-h3 lg:text-h3 font-bold text-brand-white mb-5">About</h3>
-                            <p class="text-brand-white text-small-p lg:text-p">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-span-12 md:col-span-4">
-                    <a href="#" title="Innovation" aria-label="Innovation" tabindex="0" class="relative overflow-hidden block rounded-2xl group">
-                        <img src="images/sustainability.jpg" alt="sustainability" class="w-full h-96 object-cover object-center brightness-75 group-hover:brightness-100 group-hover:scale-110 transition-all">
-                        <div class="absolute bottom-0 left-0 p-4">
-                            <h3 class="text-small-h3 lg:text-h3 font-bold text-brand-white mb-5">Sustainability</h3>
-                            <p class="text-brand-white text-small-p lg:text-p">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+
+            <?php include 'components/callouts.php' ?>
+
         </div>
     </section>
 
-    <section class="my-10">
-        <div class="container">
-            <div class="grid grid-cols-12">
-                <div class="col-span-12">
-                    <h2 class="text-h2 text-brand-dark-green font-bold mb-5">Our Market Sectors</h2>
-                </div>
-            </div>
-            <div class="grid grid-cols-12 gap-y-5 md:gap-5">
-                <div class="col-span-12 md:col-span-4">
-                    <a href="#" title="Manufacturing" aria-label="Manufacturing" tabindex="0" class="relative overflow-hidden block rounded-2xl group">
-                        <img src="images/Manufacturing.jpeg" alt="manufacturing" class="w-full h-48 brightness-75 object-cover object-center group-hover:brightness-100 group-hover:scale-110 transition-all">
-                        <h3 class="text-small-h3 lg:text-h3 text-brand-white font-bold absolute bottom-0 left-0 p-4">Manufacturing</h3>
-                    </a>
-                </div>
-                <div class="col-span-12 md:col-span-4">
-                    <a href="#" title="Foodservice" aria-label="Foodservice" tabindex="0" class="relative overflow-hidden block rounded-2xl group">
-                        <img src="images/foodservice.jpg" alt="Foodservice" class="w-full h-48 brightness-75 object-cover object-center group-hover:brightness-100 group-hover:scale-110 transition-all">
-                        <h3 class="text-small-h3 lg:text-h3 text-brand-white font-bold absolute bottom-0 left-0 p-4">Foodservice</h3>
-                    </a>
-                </div>
-                <div class="col-span-12 md:col-span-4">
-                    <a href="#" title="Retail" aria-label="Retail" tabindex="0" class="relative overflow-hidden block rounded-2xl group">
-                        <img src="images/retail.jpg" alt="Retail" class="w-full h-48 brightness-75 object-cover object-center group-hover:brightness-100 group-hover:scale-110 transition-all">
-                        <h3 class="text-small-h3 lg:text-h3 text-brand-white font-bold absolute bottom-0 left-0 p-4">Retail</h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <section class="my-10">
         <div class="container">

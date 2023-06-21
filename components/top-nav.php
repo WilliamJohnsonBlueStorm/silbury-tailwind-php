@@ -1,4 +1,4 @@
-<?php include 'data/navigation.php' ?>
+<?php include 'data/navigation.php'; ?>
 
 <div id="top-navigation" class="hidden lg:block col-span-9 text-right">
     <nav role="navigation">
