@@ -7,12 +7,8 @@
 
                 <?php include 'components/footer-helpful-Links.php'?>
 
-                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
-                    <h5 class="text-brand-light-green text-h5 font-bold md:mb-5">Our Rapeseed oil is</h5>
-                    <a href="#" title="red tractor" aria-label="red tractor" tabindex="0" target="_blank" class="inline-block"><img src="images/red-tractor.png" alt="red tractor"></a>
-                    <a href="#" title="sedex" aria-label="sedex" tabindex="0" target="_blank" class="inline-block"><img src="images/sedex.png" alt="sedex"></a>
-                    <a href="#" title="ica" aria-label="RSPO ica" tabindex="0" target="_blank" class="inline-block"><img src="images/ica.png" alt="ica"></a>
-                </div>
+                <?php include 'components/footer-certifications.php'?>
+
             </div>
         </div>
     </section>
